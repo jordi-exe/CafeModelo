@@ -102,7 +102,7 @@ h1 {
     -webkit-animation:fade 3000ms infinite;
 }
 
-.footer {
+footer {
    position: fixed;
    left: 0;
    bottom: 0;
