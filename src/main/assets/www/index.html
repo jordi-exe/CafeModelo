@@ -9,6 +9,7 @@
     <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/login.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 <body>
 <template id="page1.html">
@@ -61,6 +62,16 @@
 
         <div style="text-align: center; color:#01579b;">
         <div style="display: inline-block; text-align: left; margin-top: 10px">
+            <h4>Primer Nombre</h4>
+            <p>
+                <ons-input id="fname" placeholder="John" modifier="underbar"></ons-input>
+            </p>
+
+            <h4>Appellido</h4>
+            <p>
+                <ons-input id="lname" placeholder="ejemplo" modifier="underbar"></ons-input>
+            </p>
+
             <h4>Usuario</h4>
             <p>
                 <ons-input id="username" placeholder="ejemplo" modifier="underbar"></ons-input>
@@ -101,6 +112,9 @@
             <section style="padding-left:50px; padding-right:50px; padding-top:10px">
                 <ons-button modifier="large">Registrate</ons-button>
             </section>
+
+            <br>
+            <br>
         </div>
         </div>
     </ons-page>

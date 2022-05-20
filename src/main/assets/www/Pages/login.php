@@ -23,10 +23,10 @@ $count = $row['cntUser'];
 
 if($count > 0)
 {
+    echo json_encode("ok");
     $_SESSION['name'] = $name;
-    echo 1;
 } else {
-    echo 0;
+    return 0;
 }
 
 ?>
