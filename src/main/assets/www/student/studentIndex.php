@@ -1,3 +1,12 @@
+<?php
+// We need to use sessions, so you should always start sessions using the below code.
+session_start();
+// If the user is not logged in redirect to the login page...
+if (!isset($_SESSION['loggedin'])) {
+	header('Location: ../index.html');
+	exit;
+}
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,12 +21,14 @@
         <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
         <script src="index.js"></script>
+        <script src="../js/login.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     </head>
     <body>
         <ons-page>
             <ons-toolbar>
-                <div class="center">Inicio</div>
+                <div class="center"><?php echo $_SESSION['uname']; ?></div>
+                <div class="right"><ons-toolbar-button onclick="logout()">Logout</ons-toolbar-button></div>
             </ons-toolbar>
 
             <ons-tabbar swipeable position="auto">

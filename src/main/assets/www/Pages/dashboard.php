@@ -1,7 +1,7 @@
 <?php
     session_start();
     if(!isset($_SESSION['name'])){
-        header("Location: dashboard.php");
+        header("Location: index.html");
     }
     if(isset($_GET['logout']) == 'yes'){
         session_destroy();
