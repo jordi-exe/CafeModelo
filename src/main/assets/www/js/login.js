@@ -12,7 +12,7 @@ function login() {
       data : { phpuser : username, phppass: password},
 
       // especifica si será una petición POST o GET
-      type : 'POST',
+      type : 'GET',
 
       // el tipo de información que se espera de respuesta
 
@@ -20,11 +20,9 @@ function login() {
       // código a ejecutar si la petición es satisfactoria;
       // la respuesta es pasada como argumento a la función
       success : function(json) {
-      alert('passing through success');
-      console.log(json, 'label');
-          if(json=="ok"){
+          if(JSON.parse(json)=="ok"){
             alert('passing through success');
-            setTimeout(callDashboard(), 4000);
+            window.location.replace("http://localhost/MyApp/platforms/android/app/src/main/assets/www/student/studentIndex.php");
           }
       },
 
@@ -40,8 +38,9 @@ function login() {
           alert('Petición realizada');
       }
   });
-}http:
+}
 
 function callDashboard(){
+alert('dashboard call');
     window.location.replace("http://localhost/MyApp/platforms/android/app/src/main/assets/www/Pages/dashboard.php");
 }
