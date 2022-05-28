@@ -58,63 +58,66 @@
             <h4>Cocina Modelo</h4>
         </div>
 
-        <div style="text-align: center; color:#01579b;">
-        <div style="display: inline-block; text-align: left; margin-top: 10px">
-            <h4>Primer Nombre</h4>
-            <p>
-                <ons-input id="fname" placeholder="John" modifier="underbar"></ons-input>
-            </p>
+        <form id="register-form">
 
-            <h4>Appellido</h4>
-            <p>
-                <ons-input id="lname" placeholder="ejemplo" modifier="underbar"></ons-input>
-            </p>
+            <div style="text-align: center; color:#01579b;">
+                <div style="display: inline-block; text-align: left; margin-top: 10px">
+                    <h4>Primer Nombre</h4>
+                    <p>
+                        <ons-input id="fname" placeholder="John" modifier="underbar"></ons-input>
+                    </p>
 
-            <h4>Usuario</h4>
-            <p>
-                <ons-input id="username" placeholder="ejemplo" modifier="underbar"></ons-input>
-            </p>
+                    <h4>Appellido</h4>
+                    <p>
+                        <ons-input id="lname" placeholder="ejemplo" modifier="underbar"></ons-input>
+                    </p>
 
-            <h4>Contrasena</h4>
-            <p>
-                <ons-input
-                        id="password"
-                        type="password"
-                        placeholder="*******"
-                        modifier="underbar"
-                >
-                </ons-input>
-            </p>
+                    <h4>Usuario</h4>
+                    <p>
+                        <ons-input id="uname" placeholder="ejemplo" modifier="underbar"></ons-input>
+                    </p>
 
-            <h4>Confirma Contrasena</h4>
-            <p>
-                <ons-input
-                        id="confirmPass"
-                        type="password"
-                        placeholder="*******"
-                        modifier="underbar"
-                >
-                </ons-input>
-            </p>
+                    <h4>Contrasena</h4>
+                    <p>
+                        <ons-input
+                                id="pword"
+                                type="password"
+                                placeholder="*******"
+                                modifier="underbar"
+                        >
+                        </ons-input>
+                    </p>
 
-            <h4>Numero Telefonico</h4>
-            <p>
-                <ons-input id="phoneNum" placeholder="123 4565" modifier="underbar"></ons-input>
-            </p>
+                    <h4>Confirma Contrasena</h4>
+                    <p>
+                        <ons-input
+                                id="confirmPass"
+                                type="password"
+                                placeholder="*******"
+                                modifier="underbar"
+                        >
+                        </ons-input>
+                    </p>
 
-            <h4>Correo</h4>
-            <p>
-                <ons-input id="email" type="email" placeholder="ejemplo@gmail.com" modifier="underbar"></ons-input>
-            </p>
+                    <h4>Numero Telefonico</h4>
+                    <p>
+                        <ons-input id="phoneNum" placeholder="123 4565" modifier="underbar"></ons-input>
+                    </p>
 
-            <section style="padding-left:50px; padding-right:50px; padding-top:10px">
-                <ons-button modifier="large">Registrate</ons-button>
-            </section>
+                    <h4>Correo</h4>
+                    <p>
+                        <ons-input id="email" type="email" placeholder="ejemplo@gmail.com" modifier="underbar"></ons-input>
+                    </p>
 
-            <br>
-            <br>
-        </div>
-        </div>
+                    <section style="padding-left:50px; padding-right:50px; padding-top:10px">
+                        <ons-button modifier="large" onclick="register()">Registrate</ons-button>
+                    </section>
+
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </form>
     </ons-page>
 </template>
 </body>
